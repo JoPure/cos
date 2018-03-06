@@ -1,0 +1,20 @@
+{
+  "name": "template",
+  "version": "0.0.0",
+  "authors": [
+    "xiaoyi <51990145@qq.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "~2.10.6",
+    "swiper": "~3.1.0",
+    "jquery": "~2.1.4"
+  }
+}

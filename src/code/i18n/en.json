@@ -1,0 +1,54 @@
+﻿{
+	"headerTitle":"Ravenmarch-Gift Code",
+	"public":{
+		"prompt":"Tips",
+		"closeDialog":"Close",
+		"ServerError":"Server error",
+		"noMore":"No more left",
+		"pleaseLogin":"Login first",
+		"login":"Login",
+		"downloadGame":"Download Game",
+		"downloadDesc":"This gift code is available for all versions",
+		"stayTuned":"Coming soon",
+		"urlError":"This url is wrong",
+		"goHome":"Return",
+		"cancel":"Cancel"
+	},
+	"login":{
+		"signing":"Logining...",
+		"loginSuccess":"Login successs！",
+		"LoginFail":"Login fail！",
+		"relogin":"Relogin"
+	},
+	"code":{
+		"codeCenter":"Gift Center",
+		"myCode":"Code Box",
+		"gettingCode":"Getting the code...",
+		"haveReceived":"Claimed",
+		"completeActivity":"To finish event",
+		"noAnyActivities":"No gift code event now！",
+		"validity":"Event time",
+		"usage":"Usage",
+		"giftInfo":"Reward",
+		"leave":"Left",
+		"getSoon":"Claim now",
+		"get":"Claim",
+		"limitDate":"End time",
+		"getSuccess":"Claimed, please login game to use it！",
+		"goHomeAndLogoin":"Return to login page",
+		"getFail":"Claim failed, confirm that you have finished the event",
+		"useFbAccount":"Please use Facebook account to login"
+	},
+	"status":{
+		"100": "No data",
+		"150": "Please relogin",
+		"200": "SUCCESS!",
+		"201": "Claimed!",
+		"199": "Null error!",
+		"202": "Requirement no march!",
+		"203": "Requirement not reach!",
+		"204": "Low stocks!",
+		"205": "Event not exist!",
+		"206": "Event is over!"
+	}
+}

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="xiaoyi">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>Manga siêu đẳng-VIPCode</title>
+		<link href="../common/reset.css" rel="stylesheet">
+		<link rel="stylesheet" href="../common/zepto.alert/css/zepto.alert.css" />
+		<link href="css/gift_details.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+	     	<script type="text/javascript" src="../../components/html5shiv/dist/html5shiv.min.js" ></script>
+			<script type="text/javascript" src="../../components/respond/dest/respond.min.js" ></script>
+	    <![endif]-->
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<span class="back" style="cursor:pointer"></span>
+				<a href="#"><span id="login" class="login-not"></span></a>
+				<p class="activity_title">VIP Code </p>
+			</header>
+			<section class="card_details">
+				<section class="gift_wrap">
+					<div class="game_gift">
+						<a href="#">
+							<img id="icon">
+						</a>
+						<h4 class="activity_title">
+                        VIP Code 
+                    </h4>
+						<p>
+							<span class="I18N">code.leave</span><span id="residuePercent">100%</span>，<span class="I18N">code.getSoon</span>
+						</p>
+					</div>
+					<p class="valid"><span class="I18N">code.validity</span>：<span id="random-date">19/12/2014 - 24/12/2014</span>
+					</p>
+					<div id="no-login-div" class="btn_wrap btn_wrap2">
+						<p><a href="#" class="login-not I18N">code.useFbAccount</a></p>
+						<a href="#" class="btn ling login-not I18N" style="width:80px;">public.login</a>
+					</div>
+					<div id="login-div" class="btn_wrap btn_wrap2" style="display:none;">
+						<p id="userName"></p>
+						<a href="#" class="btn ling login-in I18N">code.get</a>
+					</div>
+					<div class="ling ling_failed" style="display:none;">
+
+						<div class="sec lsec">
+							<div class="msg" id="getRules" style="padding-left:10px;">
+							</div>
+						</div>
+
+					</div>
+					<div class="ling ling_success" style="display:none;">
+
+						<div class="sec lsec">
+							<div class="msg">
+								<span class="I18N">code.getSuccess</span>
+							</div>
+							<div class="copy_wrap">
+								<div class="copy" id="cdkCode"></div>
+							</div>
+
+						</div>
+
+					</div>
+				</section>
+				<section class="method_wrap">
+					<div class="tags" id="tags">
+						<a href="javascript:void(0);" class="current I18N" onclick="selectTag('tagContent0',this)">code.giftInfo</a>
+						<a href="javascript:void(0);" class="I18N" onclick="selectTag('tagContent1',this)">code.usage</a>
+					</div>
+					<div class="tags_cont">
+						<div id="tagContent0" class="giftInfo">
+
+						</div>
+						<div id="tagContent1" style="display:none;" class="useage">
+						</div>
+					</div>
+
+				</section>
+
+				<section class="down_wrap">
+					<!-- <a href="#" class="no-down down_btn">right now</a> -->
+					<div class="down down_btn" id="fix" style="position: static; border-width: 0px;">
+						<a id="downloadBtn" target="_blank" class="I18N">public.downloadGame</a>
+					</div>
+					<div class="down_info">
+						<p class="I18N">public.downloadDesc</p>
+						<span></span>
+					</div>
+
+				</section>
+			</section>
+
+			<!--<div class="backtop">
+				<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade in" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+			</div>-->
+
+			<footer>
+				<span>Manga siêu đẳng©2016 </span>
+			</footer>
+		</div>
+		<!-- js library -->
+		<!--<script type="text/javascript" src="../../components/jquery/dist/jquery-1.9.0.min.js" ></script>-->
+		<script type="text/javascript" src="../../components/zepto/zepto.js"></script>
+		<script type="text/javascript" src="../common/zepto.alert/js/zepto.alert.js"></script>
+		<script type="text/javascript" src="../../components/zepto/touch.js"></script>
+		<script type="text/javascript" src="../../components/zepto-cookie/zepto.cookie.min.js"></script>
+		<script type="text/javascript" src="js/facebook-config.js"></script>
+		<script type="text/javascript" src="js/facebook.js"></script>
+
+		<script type="text/javascript" src="../common/i18n.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script>
+			$(function() {
+				i18N.init(fbConfig.i18nResURL, fbConfig.defaultLang).t();
+				$(".back").bind('click', function() {
+					window.location.href = pg_config.fb_redirect_uri;
+				})
+				facebook.bindLoginDom('.login-not');
+				var key = facebook.getParameterByName('key');
+				if (!key) {
+					$.dialog({
+						content: i18N.get("public.urlError"),
+						title: "alert",
+						ok: function() {
+							window.location.href = 'index.html';
+						},
+						okText: i18N.get("public.goHome"),
+						lock: false
+					});
+				} else {
+					renderDetailPage(key);
+				}
+				
+				
+				$('#icon').attr('src', fbConfig.iconURL);
+				$('#downloadBtn').click(function(){
+					facebook.downloadApp();
+				})
+			})
+		</script>
+
+		<script type="text/javascript">
+			function selectTag(showContent, selfObj) {
+				var tag = document.getElementById("tags").getElementsByTagName("a");
+				var taglength = tag.length;
+				for (i = 0; i < taglength; i++) {
+					tag[i].className = "";
+				}
+				selfObj.className = "current";
+				for (i = 0; j = document.getElementById("tagContent" + i); i++) {
+					j.style.display = "none";
+				}
+				document.getElementById(showContent).style.display = "block";
+			}
+		</script>
+	</body>
+
+</html>

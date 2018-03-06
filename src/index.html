@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Manga Siêu Đẳng</title>
+    <meta name="description" content="Manga Siêu Đẳng">
+    <meta name="keywords" content="Manga Siêu Đẳng">
+    <meta name="author" content="xy">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="common/reset.css"/>
+    <link rel="stylesheet" href="home/css/main.css"/>
+    <!--<script type="text/javascript" src="common/uaredirect.js"></script>
+    <script>
+        uaredirect('home/mobile/index.html');
+    </script>-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../components/html5shiv/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="home/js/uaredirect.js"></script>
+    <script>
+        uaredirect('http://www.mangasieudang.com/mobile');
+    </script>
+</head>
+<body>
+<!-- head logo begin -->
+<div class="header">
+</div>
+<!-- head logo end-->
+<!--mian begin-->
+<div class="main">
+    <div class="main-swiper">
+        <div class="top">
+            <div class="downloads">
+                <a href="http://1481044853.rsc.cdn77.org/mangasieudang/mangasieudang.apk" target="_blank"
+                   class="downlad dl-apk"></a>
+
+                <div class="downlad dl-office">
+                    <a href="http://apple.co/21U7vaG" target="_blank" class="downlad dl-ios"></a>
+                    <a href="http://goo.gl/i658Ly" target="_blank" class="downlad dl-android"></a>
+                </div>
+            </div>
+            <div class="qrcode">
+                <a href="http://www.facebook.com/mangasieudang/" target="_blank" class="fb-btn"></a>
+            </div>
+            <div class="showFeatures">
+                <img src="home/img/features.png">
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="heros-list">
+                <img src="home/img/heros-info.png">
+            </div>
+            <div class="show-img">
+                <ul class="name-list">
+                    <li class="active">Gintama</li>
+                    <li>Naruto</li>
+                    <li>Suzumiya</li>
+                    <li>Hiei</li>
+                    <li>Luffy</li>
+                    <li>Levi</li>
+                    <li>Hatsune Miku</li>
+                    <li>Mai</li>
+                </ul>
+                <ul class="img-list">
+                    <li class="active"><img src="home/img/img-gintama.jpg"></li>
+                    <li><img src="home/img/img-naruto.jpg"></li>
+                    <li><img src="home/img/img-suzumiya.jpg"></li>
+                    <li><img src="home/img/img-hiei.jpg"></li>
+                    <li><img src="home/img/img-luffy.jpg"></li>
+                    <li><img src="home/img/img-levi.jpg"></li>
+                    <li><img src="home/img/img-hatsunemiku.jpg"></li>
+                    <li><img src="home/img/img-mai.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--main end-->
+
+<div class="footer">
+    <div class="footer-swiper">
+        <div class="taps">
+            <a class="tap1 active"></a>
+            <a class="tap2"></a>
+            <a class="tap3"></a>
+            <a class="tap4"></a>
+        </div>
+        <div class="screenshots">
+            <img class="lazy active" src="home/img/screenshot-1.png">
+            <img class="lazy" src="home/img/screenshot-2.png">
+            <img class="lazy" src="home/img/screenshot-3.png">
+            <img class="lazy" src="home/img/screenshot-4.png">
+            <!--<img data="home/img/screenshot-1.png" class="active" src="home/img/screenshot-1.png">
+            <img data="home/img/screenshot-2.png" src="home/img/screenshot-2.png">
+            <img data="home/img/screenshot-3.png" src="home/img/screenshot-3.png">
+            <img data="home/img/screenshot-4.png" src="home/img/screenshot-4.png">-->
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="common/jquery.lazyload.js"></script>
+<script>
+    $(function () {
+        // switch imgs
+        var nameListDom = $('.name-list li');
+        var imgListDom = $('.img-list li');
+        nameListDom.hover(function () {
+            if ($(this).hasClass('active')) {
+                return;
+            }
+            // name switch
+            $('.name-list li.active').removeClass('active');
+            $(this).addClass('active');
+            var hoverIndex = nameListDom.index(this);
+            // show img switch
+            $('.img-list li.active').removeClass('active');
+            $(".img-list li:eq(" + hoverIndex + ")").addClass('active');
+        });
+        // switch screenshot
+        var tapsDom = $('.taps a');
+        var screenShotsDom = $('.screenshots img');
+        tapsDom.hover(function () {
+            if ($(this).hasClass('active')) {
+                return;
+            }
+            $('.taps a.active').removeClass('active');
+            $(this).addClass('active');
+            var hoverIndex = tapsDom.index(this);
+            $('.screenshots img.active').removeClass('active');
+            $(".screenshots img:eq(" + hoverIndex + ")").addClass('active');
+        });
+    });
+</script>
+
+</html>

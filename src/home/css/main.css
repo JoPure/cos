@@ -1,0 +1,225 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: #e4e4e4;
+	-webkit-tap-highlight-color: rgba(88, 44, 22, 0.9);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	text-align: center;
+}
+li {
+	list-style-type: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+a {
+	cursor: pointer;
+}
+.header {
+	width: 100%;
+	max-width: 1920px;
+	height: 776px;
+	background: url(img/header-bg.jpg) center no-repeat;
+	margin: 0 auto;
+}
+a.downlad {
+	display: block;
+}
+.main {
+	width: 100%;
+	max-width: 1920px;
+	height: 570px;
+	background: url(img/main-bg.jpg) center no-repeat;
+	margin: 0 auto;
+	/*text-align: center;*/
+}
+.main-swiper {
+	text-align: center;
+	width: 1020px;
+	margin: 0 auto;
+	position: relative;
+    top: -130px;
+	
+}
+.main-swiper .top,.bottom{
+	width: 100%;
+	overflow: hidden;
+}
+.main-swiper .top .downloads{
+	width: 266px;
+	float: left;
+}
+.main-swiper .top .dl-apk {
+	width: 266px;
+	height: 128px;
+	background: url(img/dl-apk.png) center no-repeat;
+}
+.main-swiper .top .dl-apk:hover {
+	background: url(img/dl-apk-hover.png) center no-repeat;
+}
+.main-swiper .top .dl-ios {
+	float: left;
+	width: 133px;
+	height: 133px;
+	background: url(img/dl-ios.png) center no-repeat;
+}
+.main-swiper .top .dl-ios:hover {
+	background: url(img/dl-ios-hover.png) center no-repeat;
+}
+.main-swiper .top .dl-android {
+	float: left;
+	width: 133px;
+	height: 133px;
+	background: url(img/dl-android.png) center no-repeat;
+}
+.main-swiper .top .dl-android:hover {
+	background: url(img/dl-android-hover.png) center no-repeat;
+}
+.main-swiper .top .qrcode{
+	width: 256px;
+	height: 261px;
+	float: left;
+	margin-left: 25px;
+	background: url(img/qrcode.png) center no-repeat;
+}
+.main-swiper .top .showFeatures{
+	margin-left: 25px;
+	float: left;
+}
+
+.main-swiper .top a.fb-btn{
+	display: block;
+	width: 199px;
+	height: 53px;
+	background: url(img/fb-btn.png) center no-repeat;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top:195px
+}
+.main-swiper .top a.fb-btn:hover{
+	background: url(img/fb-btn-hover.png) center no-repeat;
+}
+
+.main-swiper .bottom{
+	margin-top: 60px;
+}
+.main-swiper .bottom .heros-list{
+	float: left;
+}
+.main-swiper .bottom .show-img{
+	float: left;
+	margin-left: 20px;
+	width: 446px;
+	height: 353px;
+}
+.main-swiper .bottom .show-img ul{
+	display: block;
+}
+.main-swiper .bottom .name-list{
+	display: block;
+	width: 107px;
+	float: left;
+	background-color: #000000;
+}
+.main-swiper .bottom .name-list li{
+	cursor: pointer;
+	width: 100%;
+	line-height: 41px;
+	background-color: #34393F;
+	border: 1px solid #464D55;
+	margin-bottom: 1px;
+	color: #FFFFFF;
+	font-size: 80%;
+}
+.main-swiper .bottom .name-list li.active{
+	background-color: #FFFFFF;
+	color: #E94C3D;
+	border-left: 4px solid #E94C3D;
+}
+.main-swiper .bottom .img-list{
+	display: block;
+	width: 337px;
+	float: left;
+}
+.main-swiper .bottom .img-list li{
+	display: none;
+}
+.main-swiper .bottom .img-list li.active{
+	display: block;
+}
+
+.footer{
+	background: url(img/footer-bg.jpg) center no-repeat;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	max-width: 1920px;
+	height: 756px;
+}
+.footer .footer-swiper{
+	text-align: center;
+	width: 1023px;
+	background: url(img/footer-swiper-bg.png) center no-repeat;
+	margin: 0 auto;
+	height: 544px;
+	position: relative;
+	top: 60px;
+}
+
+.taps{
+	width:100%;
+	height: 46px;
+	margin-left: 60px;
+	
+}
+
+.taps a{
+	display: block;
+	width: 222px;
+	height: 100%;
+	float: left;
+	margin-top: 8px;
+}
+.tap1{
+	background: url(img/tap1.png);
+}
+.tap1.active{
+	background: url(img/tap1-hover.png);
+}
+.tap2{
+	background: url(img/tap2.png);
+}
+.tap2.active{
+	background: url(img/tap2-hover.png);
+}
+.tap3{
+	background: url(img/tap3.png);
+}
+.tap3.active{
+	background: url(img/tap3-hover.png);
+}
+.tap4{
+	background: url(img/tap4.png);
+}
+.tap4.active{
+	background: url(img/tap4-hover.png);
+}
+
+.screenshots img{
+	display: none;
+	margin-right: 0px;
+}
+.screenshots img.active{
+	display: block;
+}

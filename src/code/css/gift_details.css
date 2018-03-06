@@ -1,0 +1,79 @@
+﻿
+html{ font-size:62.5%; }
+body{ font-family: 'DokChampa'; font-size:1.2rem; color: #474747; background-color: #f2f2f2; -webkit-text-size-adjust: 100%;}
+body a{ color: #474747;cursor: pointer;}
+h3{ height: 41px; margin: 0 10px; border-bottom: 1px solid #e5e5e5; font-size: 1.6rem; font-weight: normal; line-height: 41px; position: relative; margin-bottom: 20px;}
+h3 span{ font-family: "SimSun"; font-size: 1.6rem; color: #d1d1d1; float: right;}
+h3 span.spe{ font-family: 'DokChampa'; font-size: 1.1rem; color: #888;}
+h3 span a{ font-family: 'DokChampa'; color: #888;}
+h3 span a:active strong.sx{ transform:rotate(360deg);}
+h3 i{ display: block; width: 64px; height: 1px; background-color: #f42d2d; position: absolute; left: 0; bottom: -1px;}
+ .container {margin: 0 auto; max-width: 1000px;min-width: 300px;border: 1px solid #474747;}
+header{ width: 100%; height: 45px; border-bottom: 1px solid #dedede; position: relative; background-color: #fff;}
+header span{ width: 22px; height: 22px; position: absolute; top: 11px;}
+header span.back,header span.search,header span.login-not{ background: url('../img/sprite2.png') no-repeat; background-size: 100% 600%;}
+header span.back{ left: 10px; background-position: 0 0;}
+header span.back:active{ background-position: 0 -22px;}
+header span.search{ right: 10px; background-position: 0 -88px; margin-left: 10px;}
+header span.search:active{ background-position: 0 -110px;}
+header span.login-not{ right: 42px; background-position: 0 -44px;}
+header span.login-not:active{ background-position: 0 -66px;}
+header span.login-in{width:70px; right: 2px;overflow: hidden; white-space: nowrap; text-overflow:ellipsis;margin-top:2px;}
+header p{ height: 45px; margin: 0 76px; font-size: 1.9rem; line-height: 45px; text-align: center; overflow: hidden; white-space: nowrap; text-overflow:ellipsis;}
+
+.gift_wrap{ padding: 20px 0 15px; background-color: #fff;}
+.game_gift{ padding: 0 10px; height: 50px; margin-bottom: 15px;}
+.game_gift img{ width: 50px; height: 50px; border-radius: 10px; float: left; margin-right: 16px;}
+.game_gift h4{ height: 27px; font-size: 1.6rem; line-height: 27px; position: relative; top: -2px; overflow: hidden; white-space: nowrap; text-overflow:ellipsis;}
+.game_gift p{ font-size: 1.4rem; line-height: 27px; color: #888;}
+.game_gift p span{ color: #f42d2d;}
+.btn_wrap{ margin: 0 10px; height: 28px; line-height: 28px; background-color: #f2f2f2; border-radius: 14px; overflow: hidden;}
+.btn_wrap1 a.btn{ display: block; width: 100%; height: 100%; font-size: 1.5rem; color: #fff; text-align: center;}
+.btn_wrap1 a.ling{ background-color: #3ad34f;}
+.btn_wrap1 a.tao{ background-color: #fcbd27;}
+.btn_wrap1 a.ding{ background-color: #48cbea;}
+.btn_wrap2 p{ display: inline-block; padding-left: 16px; font-size: 1.4rem; color: #888;}
+.btn_wrap2 p a{ color: #474747;}
+.btn_wrap2 a.btn{ display: block; width: 66px; height: 100%; border-radius: 14px; float: right; font-size: 1.5rem; color: #fff; text-align: center;}
+.btn_wrap2 a.ling{ background-color: #3ad34f;}
+.btn_wrap2 a.tao{ background-color: #fcbd27;}
+.btn_wrap2 a.ding{ background-color: #48cbea;}
+.gift_wrap p.valid{ margin: 10px 10px 0; font-size: 1.3rem; line-height: 22px; color: #888;}
+.gift_wrap p.valid span{ color: #474747;}
+
+.sec{ padding: 0 10px 15px; background-color: #fff; border-bottom: 1px solid #e7e7e7;}
+.sec .msg{ /*height: 40px;*/ background-color: rgba(253,57,57,0.08); font-size: 1.4rem; line-height: 40px;}
+.sec .msg i{ display: block; width: 15px; height: 15px; margin: 13px 10px 0; float: left; background: url('../img/msg.png') no-repeat; background-size: 100% 100%;}
+.sec .msg a{color:#35aafc}
+.copy_wrap{ margin-top: 20px; border-bottom: 1px solid #e5e5e5;}
+.copy{ padding-left: 13px; margin-bottom: 12px; height: 38px; background-color: #ececec; font-size: 1.5rem; line-height: 38px; color: #888;}
+.copy input{ height: 28px; padding: 5px 0; border: none; background: none; color: #f42d2d; font-family: "DokChampa"; font-size: 1.5rem; line-height: 37px;}
+.copy_wrap p{ font-size: 1.5rem; line-height: 25px; margin-bottom: 12px;}
+.sec_btn { margin-top: 15px;}
+.sec_btn a{ display: block; width: 100%; height: 35px; border-radius: 8px; font-size: 1.6rem; line-height: 35px; text-align: center;}
+.sec_btn a.sec_down{ background-color: #35aafc; color: #fff; float: left;}
+.sec_btn a.sec_down:active{ border-color: #2a88ca; background-color: #2a88ca}
+.sec_btn a.sec_tao{ background-color: #fcbd27; color: #fff; float: left;}
+.sec_btn a.sec_tao:active{ border-color: #eeaa07; background-color: #eeaa07}
+.ling.ling_failed, .ling.ling_success{margin-top:20px;}{margin-top:20px;}
+
+.method_wrap{ padding: 0 10px; background-color: #fff; margin-top: 15px;}
+.tags{ height: 42px; border-bottom: 1px solid #e5e5e5;}
+.tags a{ display: block; width: 50%; height: 42px; float: left; font-size: 1.6rem; text-align: center; line-height: 42px; position: relative;}
+.tags a.current{ color: #f42d2d;}
+.tags a span{ display: block; width: 1px; height: 15px; background-color: #e5e5e5; float: right; margin-top: 14px;}
+.tags a.current i{ display: block; width: 100%; height: 1px; background-color: #f42d2d; position: absolute; left: 0; bottom: -1px;}
+.tags_cont{ padding: 12px 0;}
+.tags_cont p{ font-size: 1.6rem; line-height: 30px;}
+
+
+.down_wrap{ padding-top: 10px; background-color: #fff; margin-top: 15px; border-bottom: 1px solid #e7e7e7;}
+.down_wrap .down_btn{ width: 100%; padding: 10px 0; background-color: rgba(255,255,255,0.88); z-index: 99; border-bottom: 0px solid #e7e7e7;}
+.down_wrap .down_btn a{ display: block; margin: 0 10px; height: 30px; font-size: 1.4rem; text-align: center; line-height: 30px;}
+.down_wrap .no-down a{ border: 1px solid #e5e5e5; cursor: default;}
+.down_wrap .down a{ border: 1px solid #35aafc; background-color: #35aafc; color: #fff;}
+.down_info{ margin: 0 10px; height: 30px; margin-top: 2px;margin-bottom: 10px; background-color: #ebebeb; position: relative;}
+.down_info p{ height: 30px; font-size: 1.4rem; text-align: center; line-height: 30px;}
+.down_info span{ display: block; width: 0; height: 0; font-size: 0; border-width: 0 7px 7px; border-style: dashed dashed solid; border-color: transparent transparent #ebebeb; position: absolute; left: 50%; top: -7px; margin-left: -4px; overflow: hidden;}
+
+footer{text-align:center;height:60px;color:#35aafc;margin-top:20px;}

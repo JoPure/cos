@@ -1,0 +1,369 @@
+﻿html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'DokChampa';
+	font-size: 1.2rem;
+	color: #474747;
+	background-color: #f2f2f2;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(88, 44, 22, 0.9);
+	-webkit-touch-callout: none;
+	-moz-user-select: none;
+}
+body a {
+	color: #474747;
+	cursor: pointer;
+}
+h3 {
+	height: 41px;
+	margin: 0 10px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 1.6rem;
+	font-weight: normal;
+	line-height: 41px;
+	position: relative;
+	margin-bottom: 20px;
+}
+h3 span {
+	font-family: "SimSun";
+	font-size: 1.6rem;
+	color: #d1d1d1;
+	float: right;
+}
+h3 span.spe {
+	font-family: 'DokChampa';
+	font-size: 1.1rem;
+	color: #888;
+}
+h3 span a {
+	font-family: 'DokChampa';
+	color: #888;
+}
+h3 strong.sx {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/sx.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: 12px;
+	margin-right: 6px;
+	transition: all 1s ease-out;
+}
+h3 span a:active strong.sx {
+	transform: rotate(360deg);
+}
+h3 i {
+	display: block;
+	width: 64px;
+	height: 1px;
+	background-color: #f42d2d;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	min-width: 300px;
+	border: 1px solid #474747;
+}
+header {
+	width: 100%;
+	height: 45px;
+	background-color: #282828;
+}
+header .logo {
+	width: 87px;
+	height: 23px;
+	float: left;
+	margin-left: 9px;
+	margin-top: 11px;
+}
+header span {
+	width: 22px;
+	height: 22px;
+	float: right;
+	margin-left: 15px;
+	margin-top: 11px;
+}
+header span.login-not {
+	background: url('../img/sprite1.png') no-repeat;
+	background-size: 200% 200%;
+}
+header span.login-not {
+	background-position: 0 0;
+	margin-right: 10px;
+}
+header span.login-not:active {
+	background-position: 0 -22px;
+}
+header span.login-in {
+	text-align: right;
+	width: 100px;
+	color: #fff;
+	margin-right: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.method_wrap {
+	background-color: #fff;
+	border-bottom: 1px solid #e7e7e7;
+}
+.tags {
+	padding: 0 10px;
+	height: 42px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.tags a {
+	display: block;
+	width: 50%;
+	height: 42px;
+	float: left;
+	font-size: 1.6rem;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+}
+.tags a.current {
+	color: #0fa9db;
+}
+.tags a span {
+	display: block;
+	width: 1px;
+	height: 15px;
+	background-color: #e5e5e5;
+	float: right;
+	margin-top: 14px;
+}
+.tags a.current i {
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #0fa9db;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+}
+.card_center {
+	margin-top: 15px;
+	padding-bottom: 15px;
+	background-color: #fff;
+	border-bottom: 1px solid #e7e7e7;
+}
+.card_center ul {
+	padding: 0 10px;
+}
+.card_center li {
+	padding-top: 8px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.card_center li:last-child {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+.card_center li h4 {
+	font-size: 1.5rem;
+	line-height: 38px;
+	font-weight: normal;
+}
+.card_center li .gift {
+	height: 50px;
+	position: relative;
+}
+.card_center li .gift img {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	float: left;
+	margin-right: 16px;
+}
+.card_center li .gift .gift_cont > div {
+	height: 16px;
+	font-size: 1.5rem;
+	line-height: 16px;
+	color: #888;
+	padding: 3px 0;
+}
+.card_center li .gift .gift_cont > div:first-child {
+	margin-bottom: 6px;
+}
+.card_center li .gift .gift_cont > div span {
+	display: inline-block;
+	float: left;
+}
+.card_center li .gift .gift_cont > div span.percent {
+	font-size: 1.2rem;
+}
+.card_center li .gift .gift_cont > div strong {
+	display: inline-block;
+	float: left;
+	margin-right: 3px;
+	width: 100px;
+	height: 16px;
+	font-size: 1.2rem;
+	line-height: 16px;
+	color: #474747;
+	border-radius: 8px;
+	background-color: #e6e6e6;
+	overflow: hidden;
+}
+.card_center li .gift .gift_cont > div i {
+	display: inline-block;
+	height: 16px;
+	background-color: #0fa9db;
+	margin-right: 6px;
+}
+.card_center li .gift a.card_btn {
+	display: block;
+	width: 49px;
+	height: 49px;
+	background-color: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 49px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.card_center li .gift a.card_btn:active {
+	color: #fff;
+}
+.card_center li .gift a.ling {
+	border-color: #0fa9db;
+	color: #0fa9db;
+}
+.card_center li .gift a.ling:active {
+	background-color: #0fa9db;
+	border-color: #0fa9db;
+}
+.card_center li .gift a.tao {
+	border-color: #ffd165;
+	color: #fcbd27;
+}
+.card_center li .gift a.tao:active {
+	background-color: #fcbd27;
+	border-color: #fcbd27;
+}
+.card_center li .gift a.ding {
+	border-color: #87e2f7;
+	color: #48cbea;
+}
+.card_center li .gift a.ding:active {
+	background-color: #48cbea;
+	border-color: #48cbea;
+}
+.num_box {
+	margin-top: 15px;
+}
+.num_box li {
+	padding: 20px 10px;
+	margin-bottom: 14px;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #fff;
+}
+.num_box li:last-child {
+	margin-bottom: 0;
+}
+.numbox_game {
+	height: 50px;
+	margin-bottom: 15px;
+}
+.numbox_game img {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	float: left;
+	margin-right: 14px;
+}
+.numbox_game h4 {
+	font-size: 1.6rem;
+	font-weight: normal;
+	line-height: 27px;
+	position: relative;
+	top: -2px;
+}
+.numbox_game p {
+	font-size: 1.4rem;
+	line-height: 27px;
+	color: #888;
+}
+.numbox_game p span {
+	color: #474747;
+}
+.copy {
+	padding-left: 13px;
+	height: 38px;
+	background-color: #ececec;
+	font-size: 1.5rem;
+	line-height: 38px;
+	color: #888;
+}
+.copy input {
+	height: 28px;
+	padding: 5px 0;
+	border: none;
+	background: none;
+	color: #f42d2d;
+	font-family: "DokChampa";
+	font-size: 1.5rem;
+	line-height: 37px;
+}
+a.get_more1 {
+	display: block;
+	margin-top: 15px;
+	height: 40px;
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 1.5rem;
+	line-height: 40px;
+	text-align: center;
+	color: #888;
+}
+a.get_more1 span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 6px;
+	background: url('../img/more.png') no-repeat 0 -20px;
+	background-size: 100% 400%;
+}
+a.get_more1:active {
+	background-color: #5e5e5e;
+	color: #fff;
+}
+a.get_more1:active span {
+	background-position: 0 -30px;
+}
+.backtop {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 10px;
+	bottom: 20px;
+	overflow: hidden;
+}
+.backtop a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.6) url("../img/backtop.png") no-repeat;
+	background-size: 100% 100%;
+	text-indent: -999em;
+}
+.backtop a:active {
+	background-color: #0fa9db;
+}
+footer {
+	text-align: center;
+	height: 60px;
+	color: #35aafc;
+	margin-top: 20px;
+}

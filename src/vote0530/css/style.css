@@ -1,0 +1,772 @@
+html{
+    color: white;
+    background-color: white;
+}
+
+body{
+    min-width: 1296px;
+    min-height: 3565px;
+}
+
+*{
+    margin: 0 auto;
+}
+
+.content{
+    width: 100%;
+    height: 3565px;
+}
+
+/****************header****************/
+.header{
+    width: 100%;
+    height: 989px;
+    background: url(../img/character.png) center bottom no-repeat, url(../img/headerBg.png)  center bottom no-repeat;
+}
+
+.loginArea{
+    width: 100%;
+    max-width: 1920px;
+    height: 125px;
+    background: rgb(28,25,25);
+}
+
+.loginMain{
+    width: 1296px;
+    height: 125px;
+}
+
+.logo{
+    width: 208px;
+    height: 125px;
+    margin-left: 308px;
+    float: left;
+    background: url(../img/logo.png) center right no-repeat;
+}
+
+
+.login{
+    width: 241px;
+    height: 89px;
+    margin-left: 116px;
+    margin-top: 18px;
+    float: left;
+    background: white url(../img/login.png);
+}
+
+.logout p,
+.playerId,
+.gameZone{
+    color: white;
+    font-size: 28px;
+}
+
+.playerId{
+    line-height: 89px;
+    margin-left: 100px;
+}
+
+.gameZone{
+    line-height: 0;
+    margin-left: 100px;
+}
+
+.logout p{
+    margin-left: 80px;
+}
+
+.divider{
+    width: 36px;
+    height: 125px;
+    float:left;
+    background:  url(../img/divider.png);
+}
+
+.logout{
+    width: 241px;
+    height: 89px;
+    margin-top: 18px;
+    float: left;
+    background:  url(../img/logout.png);
+}
+
+.login,
+.logout{
+    cursor: pointer;
+}
+
+
+.headMain{
+    width: 1296px;
+    height: 864px;
+    overflow: hidden;
+}
+
+.headLine{
+    width: 751px;
+    height: 327px;
+    margin-top: 20px;
+    margin-left: 0;
+    background: url(../img/headline.png) no-repeat;
+}
+
+.download{
+    width: 536px;
+    height: 357px;
+    margin-left: 135px;
+    margin-top: 41px;
+    overflow: hidden;
+    background: url(../img/download.png) no-repeat;
+}
+
+.twoDimensionalCode{
+    width: 180px;
+    height: 180px;
+    margin-left: 22px;
+    margin-top: 5px;
+    float: left;
+    background: rgb(31,31,34) url(../img/2DimensionCode.png) center no-repeat;
+}
+
+.android{
+    width: 222px;
+    height: 66px;
+    float: left;
+    margin-left: 38px;
+    margin-top: 25px;
+    background: url(../img/android.png);
+}
+
+.appStore{
+    width: 222px;
+    height: 66px;
+    float: left;
+    margin-left: 38px;
+    margin-top: 23px;
+    background: url(../img/appStore.png);
+}
+
+.android,
+.appStore{
+    cursor: pointer;
+}
+
+.date{
+    width: 386px;
+    height: 35px;
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 62px;
+}
+
+.date p{
+    color: black;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", tahoma, Arial, sans-serif;
+}
+
+.moveDown{
+    width: 79px;
+    height: 79px;
+    margin-top: 376px;
+    margin-left: 205px;
+    position: absolute;
+    background: url(../img/moveDown.png) center no-repeat;
+}
+
+/****************voteArea****************/
+.main{
+    width: 100%;
+    height: 1020px;
+    background: url(../img/votingArea.png) center no-repeat;
+}
+
+.voteArea{
+    width: 1163px;
+    height: 1020px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.voteArea li{
+    width: 515px;
+    height: 420px;
+    float: left;
+}
+
+.character1,
+.character2{
+    margin-top: 58px;
+}
+
+.character1,
+.character3{
+    margin-left: 60px;
+}
+
+
+.character3,
+.character4{
+    margin-top: 82px;
+}
+
+.character1{
+    background: url(../img/character1.png) 13px 14px no-repeat;
+}
+
+.character2{
+    background: url(../img/character2.png) 13px 14px no-repeat;
+}
+
+.character3{
+    background: url(../img/character3.png) 13px 14px no-repeat;
+}
+
+.character4{
+    background: url(../img/character4.png) 13px 14px no-repeat;
+}
+
+.voteNum{
+    width: 169px;
+    height: 120px;
+    float: left;
+    background: url(../img/voteNum.png) no-repeat;
+}
+
+.voteNum p{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", tahoma, Arial, sans-serif;
+    transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg); 	/* IE 9 */
+    -moz-transform:rotate(-15deg); 	/* Firefox */
+    -webkit-transform:rotate(-15deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-15deg); 	/* Opera */
+}
+
+.vote{
+    width: 214px;
+    height: 127px;
+    margin-top: 295px;
+    cursor: pointer;
+    background: url(../img/button.png) no-repeat;
+}
+
+.vote:hover{
+    background: url(../img/buttonPress.png) no-repeat;
+}
+
+/****************awardArea****************/
+.awardArea{
+    width: 100%;
+    height: 1432px;
+    overflow: hidden;
+    background: url(../img/awardAreaBg1.png) center top no-repeat,url(../img/awardAreaBg2.png) center bottom no-repeat;
+    /*background: url(../img/awardAreaBg.png) center no-repeat;*/
+}
+
+.awardAreaBody{
+    width: 926px;
+    height: 1432px;
+}
+
+.awardTitle{
+    width: 400px;
+    height: 73px;
+    margin-top: 45px;
+    background:  url(../img/awardTitle.png);
+}
+
+.listTitle{
+    width: 331px;
+    height: 28px;
+    margin-top: 42px;
+    margin-left: 0;
+    border-radius: 14px 14px 14px 14px;
+    background: rgb(67,67,67);
+}
+
+.awards{
+    width: 926px;
+    height: 757px;
+}
+
+
+.awards li{
+    width: 900px;
+    height: 177px;
+    margin-top: 16px;
+}
+
+.awardCaption p,
+.awards li p{
+    /*color: white;*/
+    font-size: 13px;
+    font-weight: bold;
+    font-family:   Arial, tahoma, "Microsoft Yahei", sans-serif;
+}
+
+.label{
+    color: rgb(228,143,21);
+    font-size: 24px;
+    font-family: tahoma, Arial,  "Microsoft Yahei", sans-serif;
+}
+
+.awardContent{
+    width: 693px;
+    height: 121px;
+    margin-top: 10px;
+    background: rgb(58,56,56);
+}
+
+.gift4,
+.gift1{
+    width: 231px;
+    height: 121px;
+    float: left;
+}
+
+.gift4 p,
+.gift3 p,
+.gift2 p,
+.gift1 p{
+    text-align: center;
+    margin-top: 95px;
+    color: rgb(228,143,21);
+    font-size: 14px;
+    font-family: tahoma, Arial,  "Microsoft Yahei", sans-serif;
+}
+
+.gift11{
+    background: url(../img/gift11.png) center 16px no-repeat;
+}
+
+.gift12{
+    background: url(../img/gift12.png) center 16px no-repeat;
+}
+
+.gift13{
+    background: url(../img/gift13.png) center 16px no-repeat;
+}
+
+.gift3,
+.gift2{
+    height: 121px;
+    float: left;
+}
+
+.gift21{
+    width: 200px;
+    background: url(../img/gift21.png) center 16px no-repeat;
+}
+
+.gift22{
+    width: 164px;
+    background: url(../img/gift22.png) center 16px no-repeat;
+}
+
+.gift23{
+    width: 117px;
+    background: url(../img/gift23.png) center 16px no-repeat;
+}
+
+.gift24{
+    width: 193px;
+    background: url(../img/gift24.png) center 16px no-repeat;
+}
+
+.gift31{
+    width: 200px;
+    background: url(../img/gift31.png) center 16px no-repeat;
+}
+
+.gift32{
+    width: 164px;
+    background: url(../img/gift32.png) center 16px no-repeat;
+}
+
+.gift33{
+    width: 117px;
+    background: url(../img/gift33.png) center 16px no-repeat;
+}
+
+.gift34{
+    width: 193px;
+    background: url(../img/gift34.png) center 16px no-repeat;
+}
+
+.gift41{
+    background: url(../img/gift41.png) center 16px no-repeat;
+}
+
+.gift42{
+    background: url(../img/gift42.png) center 16px no-repeat;
+}
+
+.gift43{
+    background: url(../img/gift43.png) center 16px no-repeat;
+}
+
+.awardCaption {
+    width: 900px;
+    margin-top: 36px;
+}
+
+.caption{
+    width: 331px;
+    height: 28px;
+    float: left;
+    border-radius: 14px 14px 14px 14px;
+    background: rgb(67,67,67);
+}
+
+.caption p,
+.listTitle p{
+    line-height: 28px;
+    width: 331px;
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: tahoma, "Microsoft Yahei", sans-serif;
+}
+
+.captionContent{
+    width: 900px;
+    float: left;
+    margin-top: 10px;
+}
+
+.captionFooter{
+    width:900px;
+    height: 30px;
+    float: left;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.captionFooter p{
+    line-height: 30px;
+    text-align: center;
+    color: rgb(220,67,35);
+}
+
+
+.moveUpButton{
+    width: 426px;
+    height: 106px;
+    margin-top: 105px;
+    margin-left: 250px;
+    background: url(../img/moveUpButton.png) center no-repeat;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+/***********************footer*************************/
+.footer{
+    width: 100%;
+    max-width: 1920px;
+    height: 125px;
+    padding-top: 30px;
+    background: rgb(21,19,19);
+}
+
+.footer p{
+    color: white;
+    /*font-weight: bold;*/
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    font-family:  "Microsoft Yahei",tahoma, sans-serif;
+}
+
+/***********************loginWindow*************************/
+.wrap{
+    width: 100%;
+    height: 100%;
+    top:0;
+    display: none;
+    position: fixed;
+    z-index: 99;
+}
+
+.wrap-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    background: rgb(0,0,0);
+
+}
+
+.loginWindow{
+    width: 746px;
+    height: 526px;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -373px;
+    margin-top: -263px;
+    background: url(../img/loginWindowBg.png) center no-repeat;
+}
+
+.title{
+    width: 500px;
+    font-size: 13px;
+    margin-top: 80px;
+    margin-left: 140px;
+    line-height: 30px;
+    color: red;
+    text-align: center;
+    font-family:   tahoma, "Microsoft Yahei", sans-serif;
+}
+
+.title span{
+    font-weight: bold;
+}
+
+.close2,
+.close{
+    width: 70px;
+    height: 70px;
+    top: 35px;
+    right: 30px;
+    position: absolute;
+    background: url(../img/close.png) center no-repeat;
+}
+
+.information{
+    width: 428px;
+    height: 260px;
+    /*margin-top: 10px;*/
+    margin-left: 164px;
+}
+
+.information li{
+    width: 429px;
+    height: 52px;
+    margin-top: 18px;
+}
+
+.password{
+    background: url(../img/password.png);
+}
+
+.username{
+    background: url(../img/username.png);
+}
+
+.server{
+    background: url(../img/server.png);
+}
+
+.characterID{
+    background: url(../img/characterID.png);
+}
+
+.username input,
+.password input,
+.server input,
+.characterID input{
+    width: 346px;
+    height: 46px;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-left: 80px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.loginButton{
+    width: 280px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    /*font-weight: bold;*/
+    font-family:   tahoma, "Microsoft Yahei", Arial, sans-serif;
+    margin-top: 25px;
+    background: rgb(238,116,91);
+}
+
+
+/***********************sureWindow*************************/
+.sureWindow{
+    width: 746px;
+    height: 359px;
+    display: none;
+    position: fixed;
+    z-index: 101;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -373px;
+    margin-top: -179px;
+    background: url(../img/sureWindowBg.png);
+}
+
+.message{
+    width: 500px;
+    height: 70px;
+    margin-left: 92px;
+    margin-top: 92px;
+}
+
+.icon{
+    float: left;
+    line-height: 70px;
+    font-size: 84px;
+    font-family: tahoma, Arial, "Microsoft Yahei", sans-serif;
+    font-weight: bold;
+    color: rgb(187,45,45);
+}
+
+.sureContent2,
+.sureContent1{
+    float: left;
+    line-height: 35px;
+    margin-left: 10px;
+    font-size: 22px;
+    font-family: tahoma, Arial, "Microsoft Yahei", sans-serif;
+    color: rgb(238,116,91);
+}
+
+.cancelButton,
+.sureButton{
+    width: 271px;
+    height: 70px;
+    float: left;
+    margin-top: 65px;
+}
+
+.sureButton{
+    margin-left: 92px;
+    background: url(../img/sureButtonBg.png);
+}
+
+.cancelButton{
+    margin-left: 10px;
+    background: url(../img/cancelButtonBg.png);
+}
+
+
+.login:hover,
+.logout:hover,
+.android:hover,
+.appStore:hover,
+.moveUpButton:hover,
+.wrap-bg,
+.loginButton:hover,
+.sureButton:hover,
+.cancelButton:hover{
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+/********************animation************************/
+.moveDown{
+    -webkit-animation:xguide_down 4.0s infinite ease-in-out;
+    -moz-animation:xguide_down 4.0s infinite ease-in-out;
+    -o-animation:xguide_down 4.0s infinite ease-in-out;
+    animation:xguide_down 4.0s infinite ease-in-out
+}
+
+@keyframes xguide_down{
+    0%,100%{
+        transform:scale(0.0);
+        -moz-transform:scale(0.0);
+        -o-transform:scale(0.0);
+        -webkit-transform:scale(0.0);
+        -ms-transform:scale(0.0);
+        opacity:0
+    }
+    50%{
+        transform:scale(1.0);
+        -moz-transform:scale(1.0);
+        -o-transform:scale(1.0);
+        -webkit-transform:scale(1.0);
+        -ms-transform:scale(1.0);
+        opacity:1
+    }
+
+}
+@-webkit-keyframes xguide_down{
+    0%,100%{
+        -webkit-transform:scale(0.0);
+        -moz-transform:scale(0.0);
+        -o-transform:scale(0.0);
+        -ms-transform:scale(0.0);
+        transform:scale(0.0);
+        opacity:0
+    }
+    50%{
+        -webkit-transform:scale(1.0);
+        -moz-transform:scale(1.0);
+        -o-transform:scale(1.0);
+        -ms-transform:scale(1.0);
+        transform:scale(1.0);
+        opacity:1
+    }
+
+}
+@-moz-keyframes xguide_down{
+    0%,100%{
+        -moz-transform:scale(0.0);
+        -o-transform:scale(0.0);
+        -webkit-transform:scale(0.0);
+        -ms-transform:scale(0.0);
+        transform:scale(0.0);
+        opacity:0
+    }
+    50%{
+        -moz-transform:scale(1.0);
+        -o-transform:scale(1.0);
+        -webkit-transform:scale(1.0);
+        -ms-transform:scale(1.0);
+        transform:scale(1.0);
+        opacity:1
+    }
+
+}
+@-o-keyframes xguide_down{
+    0%,100%{
+        -o-transform:scale(0.0);
+        -moz-transform:scale(0.0);
+        -webkit-transform:scale(0.0);
+        -ms-transform:scale(0.0);
+        transform:scale(0.0);
+        opacity:0
+    }
+    50%{
+        -o-transform:scale(1.0);
+        -moz-transform:scale(1.0);
+        -webkit-transform:scale(1.0);
+        -ms-transform:scale(1.0);
+        transform:scale(1.0);
+        opacity:1
+    }
+
+}

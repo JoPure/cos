@@ -1,0 +1,54 @@
+{
+	"headerTitle":"冰火帝国-激活码领取",
+	"public":{
+		"prompt":"提示",
+		"closeDialog":"关闭",
+		"ServerError":"服务器异常",
+		"noMore":"没有更多了",
+		"pleaseLogin":"请先登录",
+		"login":"登录",
+		"downloadGame":"下载游戏",
+		"downloadDesc":"此礼包适用于该游戏任何版本",
+		"stayTuned":"敬请期待",
+		"urlError":"当前URL不合法",
+		"goHome":"返回首页",
+		"cancel":"取消"
+	},
+	"login":{
+		"signing":"登录平台中...",
+		"loginSuccess":"登录成功！",
+		"LoginFail":"登录失败！",
+		"relogin":"重新登录"
+	},
+	"code":{
+		"codeCenter":"发号中心",
+		"myCode":"存号箱",
+		"gettingCode":"获取激活码中...",
+		"haveReceived":"已领取",
+		"completeActivity":"去完成活动",
+		"noAnyActivities":"目前没有激活码活动！",
+		"validity":"有效期",
+		"usage":"使用说明",
+		"giftInfo":"礼包内容",
+		"leave":"剩余",
+		"getSoon":"尽快领取",
+		"get":"领号",
+		"limitDate":"截止时间",
+		"getSuccess":"领取成功，请尽快使用哦，游戏愉快！",
+		"goHomeAndLogoin":"返回首页重新登录",
+		"getFail":"领取激活码失败，请确认完成活动",
+		"useFbAccount":"请用FB帐号登录"
+	},
+	"status":{
+		"100": "无数据",
+		"150": "Session超时!重新登录",
+		"200": "SUCCESS!",
+		"201": "已经领取!",
+		"199": "未知错误!",
+		"202": "活动条件不匹配!",
+		"203": "未达成活动条件!",
+		"204": "CDK库存不足!",
+		"205": "活动不存在!",
+		"206": "活动过期!"
+	}
+}
